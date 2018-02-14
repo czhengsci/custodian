@@ -17,7 +17,7 @@ __maintainer__ = "Chen Zheng"
 __email__ = "chz022@ucsd.edu"
 __date__ = "Oct 18, 2017"
 
-FEFF_BACKUP_FILES = ["ATOMS", "HEADER", "PARAMETERS", "POTENTIALS", "feff.inp", "*.cif"]
+FEFF_BACKUP_FILES = ["ATOMS", "HEADER", "PARAMETERS", "POTENTIALS", "feff.inp", "*.cif", "pot.bin"]
 
 logger = logging.getLogger(__name__)
 

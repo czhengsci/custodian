@@ -66,6 +66,10 @@ class UnconvergedErrorHandler(ErrorHandler):
         ca = scf_values[3]
         nmix = scf_values[4]
         actions = []
+        # Add RESTART card to PARAMETERS
+        if not "RESTART" in feff_input.tags:
+            actions.append({"dict": "PARAMETERS",
+                            "action": {"_set": {"RESTART": []}}})
 
         if nscmt < 100 and ca == 0.2:
             scf_values[2] = 100
